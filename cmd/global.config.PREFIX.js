@@ -1,14 +1,13 @@
 module.exports = {
   config: {
-    name: "${global.config.PREFIX}",
+    name: "prefix_handler",
     aliases: [],
     permission: 0,
     prefix: true,
-    description: 'Handles custom prefix responses.',
+    description: 'Handles custom prefix response.',
     categories: "botprefix",
     usages: [
-      `${global.config.PREFIX} - Get custom message.`,
-      `${global.config.PREFIX}help - Show help menu.`
+      `${global.config.PREFIX} - Get custom message.`
     ]
   },
 
@@ -17,10 +16,11 @@ module.exports = {
     const prefix = global.config.PREFIX;
     const cleanBody = body.trim().toLowerCase();
 
-    // ১. ইউজার যদি শুধুমাত্র প্রিফিক্স লেখে (যেমন: .)
+    // শুধুমাত্র প্রিফিক্স দিলে মেসেজ আসবে
     if (cleanBody === prefix) {
       return await api.sendMessage(threadId, { 
-        text: "আসসালামু আলাইকুম! আমি ইমোন বট । আমার সব কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন।" 
+        text: `আসসালামু আলাইকুম! আমি ইমন বট। আমার সব কমান্ড দেখতে ${prefix}help ব্যবহার করুন।` 
       });
+    }
   }
 };
