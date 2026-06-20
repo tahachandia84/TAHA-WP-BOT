@@ -148,9 +148,9 @@ EmonBot/
 
 ⚙️ Installation
 
-git clone https://replit.com/@sharifvau4/EMON-WP-BOT
+git clone https://github.com/sharifvau/EMON-WP-BOT
 
-cd EMON-BOT
+cd EMON-WP-BOT
 
 npm install
 
@@ -158,7 +158,7 @@ node start.js
 
 Or use PM2:
 
-pm2 start start.js --name EMON-BOT
+pm2 start start.js --name EMON-WP-BOT
 
 ---
 
