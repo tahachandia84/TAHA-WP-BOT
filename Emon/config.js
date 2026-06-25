@@ -1,11 +1,11 @@
 // ╔══════════════════════════════════════════════╗
-// ║    EMON BOT — Main Configuration File        ║
-// ║    Owner: EMON HAWLADAR                      ║
-// ║    Number: 8801309991724                     ║
-// ║    Email : emonhawladar311@gmail.com         ║
+// ║    TAHA BOT — Main Configuration File        ║
+// ║    Owner: TAHA BABU                      ║
+// ║    Number: 923474771404                     ║
+// ║    Email : tahachandia84@gmail.com         ║
 // ╚══════════════════════════════════════════════╝
 module.exports = {
-  BOT_NAME: "EMON BOT",
+  BOT_NAME: "TAHA BABU",
   PREFIX: ".",
   ALLOW_NO_PREFIX: true,        // commands work without prefix too
   REPLY_TO_INBOX: true,         // reply in private chat
@@ -15,30 +15,31 @@ module.exports = {
   AUTO_READ: false,
   AUTO_TYPING: false,
   AUTO_UPDATE: true,
-  TIMEZONE: "Asia/Dhaka",
+  TIMEZONE: "Asia/Karachi",
   LANGUAGE: "en",
   // ── OWNERS (multi-owner) ──
   OWNERS: [
-    "8801309991724",
+    "923474771404",
     "",
     ""
   ],
-  OWNER_NAME: "EMON HAWLADAR",
-  OWNER_EMAIL: "emonhawladar311@gmail.com",
+  OWNER_NAME: "TAHA BABU",
+  OWNER_EMAIL: "tahachandia84@gmail.com",
 
   // ── LOGIN ──
   loginMode: "qr",              // "qr" | "pair"
-  pairingNumber: "6011xxxx",
+  pairingNumber: "923291489055",
 
   // ── AI ──
   AI: {
     enabled: true,
     provider: "lovable",        // lovable | openai | gemini
     model: "google/gemini-2.5-flash",
-    personality: "You are EMON BOT, a helpful WhatsApp assistant created by EMON HAWLADAR."
+    personality: "You are TAHA BOT, a helpful WhatsApp assistant created by PAPA TAHA."
   },
 
   // ── BRANDING ──
-  CREDITS: "All credit — EMON HAWLADAR",
-  FOOTER: "— EMON BOT —"
+  CREDITS: "All credit
+    — TAHA BABU",
+  FOOTER: "— TAHA BABU —"
 };
