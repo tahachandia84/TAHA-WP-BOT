@@ -1,5 +1,5 @@
 module.exports = {
-  config: { name: "owner", aliases: ["dev","creator"], permission: 0, prefix: false, categorie: "System", description: "Show owner info.", credit: "EMON HAWLADAR" },
+  config: { name: "owner", aliases: ["dev","creator"], permission: 0, prefix: false, categorie: "System", description: "Show owner info.", credit: "PAPA TAHA" },
   start: async ({ api, event }) => {
     const c = global.config;
     api.sendMessage(event.threadId, {
