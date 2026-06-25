@@ -32,7 +32,7 @@ module.exports = {
     
     // কোনো টেক্সট না থাকলে গ্রিটিংস
     if (!q) {
-      const arr = ["হ্যাঁ বলো 😊", "কি বলবা শুনি 😏", "জানি তুমি বোর হইছো 😴", "EMON BOT তোমার সেবায় ✨", "Hmm?"];
+      const arr = ["ji Meri Jan 😘", "Bot k alwah or koi kam nhi 😏", "mujha nino ay rhi ap apna janu sa bta kr lo 😴", "Love you too 😘 ✨", "Hmm?"];
       const sent = await api.sendMessage(event.threadId, { text: arr[Math.floor(Math.random() * arr.length)] }, { quoted: event.message });
       global.client.handleReply.push({ name: this.config.name, messageID: sent.key.id, author: event.senderId });
       return;
